@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    background: url('../images/DeepForest_1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@import '../../src/Nav/Nav';
+@import '../../src/Home/Home';
+

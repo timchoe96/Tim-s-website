@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../images/DeepForest_1.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+nav {
+  min-height: 3vh;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+nav img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 18px;
+  height: auto;
+}
+
+nav .leftNav {
+  cursor: default;
+  width: 23rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .rightNav {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .rightNav .search {
+  width: 15px;
+  height: auto;
+}
+
+nav .rightNav .battery {
+  width: 3.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .rightNav .battery img {
+  height: 12px;
+  width: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  nav .mediumGone {
+    display: none;
+  }
+  nav .leftNav {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  nav .smallGone {
+    display: none;
+  }
+  nav .rightNav {
+    width: 12rem;
+  }
+  nav .rightNav .battery {
+    display: none;
+  }
+}
+
+.home {
+  position: relative;
+}
+
+.home .finderOpen {
+  position: absolute;
+  width: 45rem;
+  margin: auto;
+  background: white;
+  height: 25rem;
+  border-radius: 5px;
+  left: 50%;
+  margin-left: -22.5rem;
+  top: 50%;
+  margin-top: 8rem;
+}
+
+.home .finderOpen .topFinder {
+  min-height: 13%;
+  background-color: #E2E2E2;
+  border-radius: 5px 5px 0 0;
+}
+
+.home .finderOpen .bottomFinder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 87%;
+}
+
+.home .finderOpen .bottomFinder .leftFinder {
+  border-radius: 0 0 0 5px;
+  width: 30%;
+  background-color: #f2f2f2;
+}
+
+.home .finderOpen .bottomFinder .rightFinder {
+  border-radius: 0 0 5px 0;
+  width: 70%;
+}
+
+.home .homeFolder {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  right: 2rem;
+  top: 3rem;
+}
+
+.home .homeFolder img {
+  width: 4rem;
+  height: auto;
+}
+
+.home .homeFolder div {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
