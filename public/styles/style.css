@@ -111,7 +111,6 @@ nav .rightNav .battery img {
   position: absolute;
   width: 45rem;
   margin: auto;
-  background: white;
   height: 25rem;
   border-radius: 5px;
   left: 50%;
@@ -121,9 +120,37 @@ nav .rightNav .battery img {
 }
 
 .home .finderOpen .topFinder {
-  min-height: 13%;
+  text-align: center;
+  position: relative;
+  height: 13%;
   background-color: #E2E2E2;
   border-radius: 5px 5px 0 0;
+  border: solid 0.2px #b0b0b0;
+}
+
+.home .finderOpen .topFinder .icon {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .finderOpen .topFinder .icon img {
+  width: 25px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.home .finderOpen .topFinder .icon div {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #727272;
 }
 
 .home .finderOpen .bottomFinder {
@@ -131,17 +158,6 @@ nav .rightNav .battery img {
   display: -ms-flexbox;
   display: flex;
   min-height: 87%;
-}
-
-.home .finderOpen .bottomFinder .leftFinder {
-  border-radius: 0 0 0 5px;
-  width: 30%;
-  background-color: #f2f2f2;
-}
-
-.home .finderOpen .bottomFinder .rightFinder {
-  border-radius: 0 0 5px 0;
-  width: 70%;
 }
 
 .home .homeFolder {
@@ -169,5 +185,205 @@ nav .rightNav .battery img {
 .home .homeFolder div {
   font-size: 0.8rem;
   margin-top: 10px;
+}
+
+.home .homeFolder {
+  cursor: default;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  right: 2rem;
+  top: 3rem;
+}
+
+.home .homeFolder img {
+  width: 4rem;
+  height: auto;
+}
+
+.home .homeFolder div {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.rightFinder {
+  border-radius: 0 0 5px 0;
+  width: 75%;
+  border-bottom: solid 0.2px #d8d8d8;
+  border-right: solid 0.5px #d8d8d8;
+  background-color: white;
+}
+
+.leftFinder {
+  border-radius: 0 0 0 5px;
+  width: 25%;
+  background-color: #f2f2f2;
+  border-left: solid 0.5px #b0b0b0;
+  border-bottom: solid 0.2px #b0b0b0;
+  opacity: 0.95;
+  font-size: 0.7rem;
+  color: #727272;
+}
+
+.leftFinder .leftGroup {
+  margin-top: -8px;
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.leftFinder .leftGroup strong {
+  padding-left: 10px;
+}
+
+.leftFinder .leftGroup .favoriteGroup {
+  height: 30%;
+}
+
+.leftFinder .leftGroup .favoriteGroup img {
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.leftFinder .leftGroup .favoriteGroup .homeFavorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  padding: 5px 0 5px 20px;
+  margin-top: 3px;
+  background-color: #b0b0b0;
+}
+
+.leftFinder .leftGroup .favoriteGroup .docFavorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  padding: 5px 0 5px 20px;
+}
+
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  min-height: 100%;
+  width: 4.5rem;
+}
+
+.control .colorButtons {
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.control .colorButtons:hover div img {
+  visibility: visible;
+}
+
+.control .colorButtons div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0.5px solid #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+.control .colorButtons div img {
+  width: 0.3rem;
+  height: auto;
+  opacity: 0.7;
+  visibility: hidden;
+}
+
+.control .colorButtons .redButton {
+  background-color: #f05050;
+}
+
+.control .colorButtons .yellowButton {
+  background-color: #efe043;
+}
+
+.control .colorButtons .yellowButton img {
+  width: 0.4rem;
+}
+
+.control .colorButtons .greenButton {
+  background-color: #4fe454;
+}
+
+.control .backForward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.control .backForward div {
+  border: 0.5px solid #d8d8d8;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.control .backForward div img {
+  width: 8px;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

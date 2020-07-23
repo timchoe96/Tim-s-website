@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
 import Nav from './Nav/Nav';
 import Home from './Home/Home';
+import Homefolder from './Homefolder/Homefolder';
 // import playboi from './playboi.mp3';
 // import nature from './natureSounds.mp3';
 
@@ -17,7 +18,8 @@ return (
         <div className='App'> 
             <Nav></Nav>
             <Switch>
-                <Route path='/' exact component={Home}></Route>
+                <Route path='/' exact component={Homefolder}></Route>
+                <Route path='/Home' exact component={Home}></Route>
             </Switch>
         </div>
     </Router>

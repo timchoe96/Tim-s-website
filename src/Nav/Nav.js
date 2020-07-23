@@ -1,13 +1,19 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect} from 'react';
+import {useSelector,useDispatch} from 'react-redux';
 import apple from './images/apple.png';
 import search from './images/search.png';
 import battery from './images/battery.png';
 import menu from './images/menu.png';
 import wifi from './images/wifi.png';
+import {timeChange} from '../actions/index.js';
+
+
 
 const Nav = () => {
+    const dispatch = useDispatch();
+    const time = useSelector( state => state.time)
     let macTime ; 
-    const [time,setTime] = useState('');
+
 
     function getTime(){
     let today = new Date();
@@ -28,7 +34,7 @@ const Nav = () => {
     useEffect(()=>{
         setInterval(() => { 
         getTime() 
-        setTime(macTime)
+        dispatch(timeChange(macTime))
     }, 500)
     })
     
@@ -43,7 +49,7 @@ const Nav = () => {
                     <div className='mediumGone'>View</div>
                     <div className='mediumGone'>Go</div>
                     <div className='mediumGone'>Window</div>
-                    <div>Home</div>
+                   <div>Home</div>
                 </div>
                 {/* top right of navbar */}
                 <div className='rightNav'>
