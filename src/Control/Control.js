@@ -30,9 +30,11 @@ const Control = () => {
                 <img alt='' src={arrowLeft}></img>
             </div>
         </Link>
-        <div className='forward'>
-            <img alt='' src={arrowRight}></img>
-        </div>
+        <Link to='/Documents'>
+            <div className='forward'>
+                <img alt='' src={arrowRight}></img>
+            </div>
+        </Link>
     </div>
 </div>
  )

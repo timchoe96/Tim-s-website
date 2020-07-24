@@ -18,24 +18,16 @@ const Rightfinderdocs = () => {
               };
         dispatch(() => getData());
       },[dispatch]);
-
-      const test = [{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'},{title:'test'}]
     
 
     return(
              <div className='rightFinderdocs'>
-                 {/* {blogs.map((blog,id) => <Link style={{textDecoration:'none'}}key={id} to={`/Documents/${id}`}>
+                 {blogs.map((blog,id) => <Link style={{textDecoration:'none'}}key={id} to={`/Documents/${id}`}>
                      <div key={id} className='blogDoc'>
                          <img src={blank} alt=''></img>
                         <div>{`${blog.title}.doc`}</div>
                      </div>
-                      </Link> )} */}
-                      {test.map((blog,id) => <Link style={{textDecoration:'none'}}key={id} to={`/Documents/${id}`}>
-                     <div key={id} className='blogDoc'>
-                         <img src={blank} alt=''></img>
-                        <div>{`${blog.title}.doc`}</div>
-                     </div>
-                      </Link> )}    
+                      </Link> )}
             </div>
       
     )
