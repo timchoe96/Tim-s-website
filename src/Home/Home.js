@@ -1,6 +1,6 @@
 import React from 'react';
 import home from './images/home.png';
-import Rightfinder from '../Rightfinder/Rightfinder';
+import Rightfinderhome from '../Rightfinderhome/Rightfinderhome';
 import Control from '../Control/Control';
 import Leftfinder from '../Leftfinder/Leftfinder';
 
@@ -14,13 +14,13 @@ const Home = () => {
                 <div className='topFinder'>
                     <Control/>
                     <div className='icon'>
-                        <img src={home}></img>
+                        <img alt='' src={home}></img>
                         <div>Home</div>
                     </div>
                 </div>
                 <div className='bottomFinder'>
-                   <Leftfinder/>
-                   <Rightfinder/>
+                   <Leftfinder Home={'#d7d6d6'} Docs={''}/>
+                   <Rightfinderhome/>
                 </div> 
             </div>
             <div className='homeFolder'>

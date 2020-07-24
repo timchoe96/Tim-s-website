@@ -25,9 +25,11 @@ const Control = () => {
             </div>
         </div>
     <div className='backForward'>
-        <div className='back'>
-            <img alt='' src={arrowLeft}></img>
-        </div>
+        <Link to='/Home'>
+            <div className='back'>
+                <img alt='' src={arrowLeft}></img>
+            </div>
+        </Link>
         <div className='forward'>
             <img alt='' src={arrowRight}></img>
         </div>

@@ -1,0 +1,62 @@
+$border-color:#b0b0b0;
+
+
+.documents{
+    position:relative;
+    .finderOpen{
+        position:absolute;
+        width:45rem;
+        margin:auto;
+        height:25rem;
+        border-radius:5px;
+        left:50%;
+        margin-left:-22.5rem;
+        top:50%;
+        margin-top:8rem;
+        .topFinder{
+            text-align:center;
+            position:relative;
+            height:13%;
+            background-color:#E2E2E2;
+            border-radius:5px 5px 0 0;
+            border:solid 0.2px $border-color;
+            .icon{
+                height:100%;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width:25px;
+                    height:auto;
+                    margin-right:5px;
+                }
+                div{
+                    margin-left:5px;
+                    font-size:14px;
+                    color:#727272;
+                }
+            }
+        }
+        .bottomFinder{
+            display:flex;
+            min-height:87%;
+        }
+    }
+    .homeFolder{
+        position:absolute;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        color:white;
+        right:2rem;
+        top:3rem;
+        img{
+            width:4rem;
+            height:auto;
+        }
+        div{
+            font-size:0.8rem;
+            margin-top:10px;
+        }
+    }
+}   

@@ -1,0 +1,45 @@
+.Buttons{
+    min-height:5vh;
+    background-color:rgb(225, 225, 225);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    .colorButtons{
+        margin-left:0.5rem;
+        width:4rem;
+        display:flex;
+        justify-content: space-evenly;
+        &:hover div img{
+            visibility:visible;
+        }
+        div{
+            width:15px;
+            height:15px;
+            border-radius: 50%;
+            border:0.5px solid $border-color;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        cursor:default;
+            img{
+                width:0.3rem;
+                height:auto;
+                opacity: 0.7;
+                visibility:hidden;
+            }
+        }
+        .redButton{
+            background-color:#f05050;
+        }
+        .yellowButton{
+            background-color:#efe043;
+            img{
+                width:0.4rem;
+            }
+        }
+        .greenButton{
+            background-color:#4fe454;
+        }
+    }
+}
