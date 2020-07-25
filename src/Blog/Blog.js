@@ -16,14 +16,22 @@ const blog = useSelector(state => state.getData);
        }
       }
 
-//    console.log(checkRender());
+    function title(){
+        if(typeof blog[number]==='undefined'){
+            return null
+        }else{
+            return parse(blog[number].title)
+        }
+       }
     
 
     return(
         <div className='blog'>
-        <Buttons/>
+        <Buttons title={title()}/>
             <div className='content'>
-                {checkRender()}
+                <div className='page'> 
+                    {checkRender()}
+                </div>
             </div>
         </div>  
     )

@@ -4,15 +4,15 @@ import ex from './images/ex.png';
 import minus from './images/minus.png';
 import expand from './images/expand.png';
 
-const Buttons = () => {
+const Buttons = ({title}) => {
     return(
         <div className='Buttons'>
-                <div className='navBar'>
-                    <div className='colorButtons'>
-                    <Link to='/Documents'>
-                        <div className='redButton'>
-                            <img alt='' src={ex}></img>
-                        </div>
+                <div className='title'>{`${title}.doc`}</div>
+                <div className='colorButtons'>
+                     <Link to='/Documents'>
+                         <div className='redButton'>
+                             <img alt='' src={ex}></img>
+                         </div>
                     </Link>
                     <Link to='/Documents'>
                         <div className='yellowButton'>
@@ -20,10 +20,9 @@ const Buttons = () => {
                         </div>
                     </Link>
                     <div className='greenButton'>
-                        <img  alt='' src={expand}></img>
+                         <img  alt='' src={expand}></img>
                     </div>
-                    </div>
-                </div>
+                </div>     
         </div>
     )
 }

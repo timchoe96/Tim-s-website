@@ -543,11 +543,14 @@ a {
 }
 
 .blog .content {
-  min-height: 92vh;
+  height: 92vh;
   background-color: white;
+  overflow: scroll;
+  padding: 0 10%;
 }
 
 .Buttons {
+  position: relative;
   min-height: 5vh;
   background-color: #e1e1e1;
   border-top-right-radius: 8px;
@@ -560,7 +563,15 @@ a {
           align-items: center;
 }
 
+.Buttons .title {
+  margin: auto;
+  font-size: 0.8rem;
+}
+
 .Buttons .colorButtons {
+  top: 50%;
+  margin-top: -7.5px;
+  position: absolute;
   margin-left: 0.5rem;
   width: 4rem;
   display: -webkit-box;

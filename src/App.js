@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
+import {useDispatch} from 'react-redux';
 import Nav from './Nav/Nav';
 import Home from './Home/Home';
 import Documents from './Documents/Documents';
@@ -8,6 +9,19 @@ import Homefolder from './Homefolder/Homefolder';
 // import nature from './natureSounds.mp3';
 import Blog from './Blog/Blog';
 const App = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(()=>{
+        const getData = () => {
+            fetch(`https://www.googleapis.com/blogger/v3/blogs/9085604028025620950/posts?key=AIzaSyChWrKyLjsVyYj42CKBstkjrOnKWwPLqDs`)
+              .then(resp => resp.json())
+              .then(data => dispatch({
+                    type: "FETCH_DATA",
+                    payload: data.items}));
+              };
+        dispatch(() => getData());
+      },[dispatch]);
 
 
 return (
