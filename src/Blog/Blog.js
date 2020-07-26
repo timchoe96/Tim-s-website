@@ -27,7 +27,7 @@ const blog = useSelector(state => state.getData);
 
     return(
         <div className='blog'>
-        <Buttons title={title()}/>
+        <Buttons title={`${title()}.doc`} link='Documents'/>
             <div className='content'>
                 <div className='page'> 
                     {checkRender()}

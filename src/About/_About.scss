@@ -1,0 +1,12 @@
+.about{
+    .words{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        max-width:100vw;
+        height:92vh;
+        align-items:center;
+        justify-content: center;
+        background-color: white;
+    }
+}

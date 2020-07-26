@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica,Arial, sans-serif;
   background: url("../images/DeepForest_1.png") no-repeat center center fixed;
   background-size: cover;
 }
@@ -119,6 +119,69 @@ nav .rightNav .battery img {
   margin-top: 8rem;
 }
 
+.home .finderOpen .soonAlert {
+  position: absolute;
+  height: 11rem;
+  width: 32rem;
+  background: white;
+  left: 50%;
+  top: 50%;
+  margin-left: -16rem;
+  margin-top: -5.5rem;
+  border-radius: 5px;
+  border: 0.5px solid #b0b0b0;
+  -webkit-box-shadow: 3px 3px 5px -5px black;
+          box-shadow: 3px 3px 5px -5px black;
+}
+
+.home .finderOpen .soonAlert .topAlert {
+  height: 15%;
+  background-color: #E2E2E2;
+}
+
+.home .finderOpen .soonAlert .bottomAlert {
+  height: 85%;
+  font-size: 0.80rem;
+}
+
+.home .finderOpen .soonAlert .bottomAlert .top {
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .finderOpen .soonAlert .bottomAlert .top img {
+  width: 4rem;
+  height: auto;
+}
+
+.home .finderOpen .soonAlert .bottomAlert .top .text {
+  margin-top: 10px;
+  width: 22rem;
+}
+
+.home .finderOpen .soonAlert .bottomAlert button {
+  margin-left: 24rem;
+  margin-top: 1.2rem;
+  background-color: #2697F8;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home .finderOpen .soonAlert .bottomAlert button:focus {
+  outline: none;
+}
+
 .home .finderOpen .topFinder {
   text-align: center;
   position: relative;
@@ -221,6 +284,7 @@ nav .rightNav .battery img {
   border-right: solid 0.5px #d8d8d8;
   background-color: white;
   font-size: 0.8rem;
+  position: relative;
 }
 
 .rightFinderhome img {
@@ -624,5 +688,49 @@ a {
 
 .Buttons .colorButtons .greenButton {
   background-color: #4fe454;
+}
+
+.pictures .posts {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: scroll;
+  max-width: 100vw;
+  height: 92vh;
+  background-color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.pictures .posts .flexchild img {
+  max-height: 400px;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.about .words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: scroll;
+  max-width: 100vw;
+  height: 92vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

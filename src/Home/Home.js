@@ -3,9 +3,15 @@ import home from './images/home.png';
 import Rightfinderhome from '../Rightfinderhome/Rightfinderhome';
 import Control from '../Control/Control';
 import Leftfinder from '../Leftfinder/Leftfinder';
+import alert from './images/alert.png';
+import {useDispatch,useSelector} from 'react-redux';
+import {displayAlert} from '../actions/index.js';
 
 
 const Home = () => {
+    const dispatch = useDispatch();
+    const display = useSelector(state => state.display);
+
     return(
    
         <div className='home'>
@@ -22,13 +28,29 @@ const Home = () => {
                    <Leftfinder Home={'#d7d6d6'} Docs={''}/>
                    <Rightfinderhome/>
                 </div> 
+                {/* start alert box */}
+                <div className='soonAlert' style={{display:display}}>
+                    <div className='topAlert'>
+
+                    </div>
+                    <div className='bottomAlert'>
+                        <div className='top'>
+                            <img alt='' src={alert}></img>
+                            <div className='error'>
+                                <h3>Error</h3>
+                                <div className='text'>The document you are trying to access cannot be reached. Try accessing later after update has been completed.</div>
+                            </div>
+                        </div>
+                        <button onClick={()=> dispatch(displayAlert('none'))}>Close</button>
+                    </div>
+                 </div>
+                 {/* end alert box */}
             </div>
             <div className='homeFolder'>
                 <img alt='' src={home}></img>
                 <div>Home</div>
             </div>
         </div>
-   
     )
 }
 

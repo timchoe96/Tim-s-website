@@ -4,17 +4,17 @@ import ex from './images/ex.png';
 import minus from './images/minus.png';
 import expand from './images/expand.png';
 
-const Buttons = ({title}) => {
+const Buttons = ({title,link}) => {
     return(
         <div className='Buttons'>
-                <div className='title'>{`${title}.doc`}</div>
+                <div className='title'>{title}</div>
                 <div className='colorButtons'>
-                     <Link to='/Documents'>
+                     <Link to={`/${link}`}>
                          <div className='redButton'>
                              <img alt='' src={ex}></img>
                          </div>
                     </Link>
-                    <Link to='/Documents'>
+                    <Link to={`/${link}`}>
                         <div className='yellowButton'>
                             <img  alt='' src={minus}></img>
                         </div>
