@@ -28,7 +28,7 @@ const App = () => {
 
 return (
     <Router>
-        <audio controls='' autoPlay={true} volume={0.0} loop>
+        <audio controls='' autoPlay={true} loop>
         <source src={nature} type="audio/mpeg">
         </source>
         </audio>

@@ -91,3 +91,20 @@ $border-color:#b0b0b0;
         }
     }
 }
+
+@media only screen and (max-height:420px) and (orientation:landscape){
+    .documents{
+        .finderOpen{
+            width:20rem;
+            margin-left:-10rem;
+            margin-top:1rem;
+            height:310px;
+            .topFinder{
+                height:50px;
+            }
+            .bottomFinder{
+                height:270px;
+            }
+        }
+    }
+   }

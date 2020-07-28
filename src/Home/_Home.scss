@@ -6,7 +6,6 @@ $border-color:#b0b0b0;
     .finderOpen{
         position:absolute;
         width:45rem;
-        margin:auto;
         height:25rem;
         border-radius:5px;
         left:50%;
@@ -110,6 +109,16 @@ $border-color:#b0b0b0;
    
 }   
 
+@media only screen and (max-width:850px) and (max-height:450px){
+    .home{
+        .finderOpen{
+            width:20rem;
+            margin-left:-10rem;
+            margin-top:12rem;
+        }
+    }
+}
+
 
 
 @media only screen and (max-width:800px){
@@ -150,7 +159,7 @@ $border-color:#b0b0b0;
     }
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:420px) and (orientation:portrait){
     .home{
         .finderOpen{
             width:20rem;
@@ -159,4 +168,23 @@ $border-color:#b0b0b0;
         }
     }
 }
+
+@media only screen and (max-height:420px) and (orientation:landscape){
+    .home{
+        .finderOpen{
+            height:320px;
+            .topFinder{
+                height:50px;
+            }
+            .bottomFinder{
+                height:270px;
+            }
+            width:20rem;
+            margin-left:-10rem;
+            margin-top:1rem;
+        }
+    }
+}
+
+
 

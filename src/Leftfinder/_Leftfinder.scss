@@ -56,3 +56,9 @@ a{
         display:none;
     }
 }
+
+@media only screen and (max-height:420px) and (orientation:landscape){
+ .leftFinder{
+     display:none;
+ }
+}
