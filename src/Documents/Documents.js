@@ -1,9 +1,9 @@
 import React from 'react';
-import documents from './images/documents.png';
-import home from './images/home.png';
+import doc from './images/doc.png';
 import Rightfinderdocs from '../Rightfinderdocs/Rightfinderdocs.js';
 import Control from '../Control/Control';
 import Leftfinder from '../Leftfinder/Leftfinder';
+import {Link} from 'react-router-dom';
 
 
 const Documents = () => {
@@ -15,7 +15,7 @@ const Documents = () => {
                 <div className='topFinder'>
                     <Control/>
                     <div className='icon'>
-                        <img alt='' src={documents}></img>
+                        <img alt='' src={doc}></img>
                         <div>Documents</div>
                     </div>
                 </div>
@@ -24,10 +24,12 @@ const Documents = () => {
                    <Rightfinderdocs/>
                 </div> 
             </div>
-            <div className='homeFolder'>
-                <img alt='' src={home}></img>
-                <div>Home</div>
-            </div>
+            <Link to='/Home'>
+                <div className='homeFolder'>
+                    <img alt='' src={doc}></img>
+                    <div>Home</div>
+                </div>
+            </Link>
         </div>
    
     )

@@ -1,12 +1,23 @@
 .about{
+    text-align: center;
     .words{
         display: flex;
         flex-wrap: wrap;
         overflow: scroll;
         max-width:100vw;
         height:92vh;
+        max-height:92vh;
         align-items:center;
         justify-content: center;
         background-color: white;
+        padding:2rem;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .about{
+        .words{
+            font-size:0.8rem;
+        }
     }
 }

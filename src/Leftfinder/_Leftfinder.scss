@@ -44,3 +44,15 @@ a{
         }
     }
 }
+
+@media only screen and (max-width:800px){
+    .leftFinder{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .leftFinder{
+        display:none;
+    }
+}

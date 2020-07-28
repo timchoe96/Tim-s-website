@@ -7,12 +7,14 @@ const Pictures = () => {
 const [feed,setFeed] = useState([]);
 
     useEffect(()=> {
-        fetch(`https://api.tumblr.com/v2/blog/t:ludyybtv8EyHxeJzIanq3w/posts?api_key=1K5kBBtN3I6XMgfAB6qU4kQieFrKuz2abpFw21YxeauKQcUW2s`).then(res => res.json()).then(data => setFeed(data.response.posts));  
+        fetch(`https://api.tumblr.com/v2/blog/t:ludyybtv8EyHxeJzIanq3w/posts?api_key=1K5kBBtN3I6XMgfAB6qU4kQieFrKuz2abpFw21YxeauKQcUW2s&limit=10000`)
+        .then(res => res.json())
+        .then(data => setFeed(data.response.posts));  
     },[])
 
    
 
-    console.log(feed);
+  
 
 
 return (
@@ -20,7 +22,7 @@ return (
           <Buttons title={'Pictures.png'} link='Home'/>
           <div className='posts'>
                     {
-            feed.map((url,i) => <div className='flexchild'><img key={i} src={url.link_url} alt=''></img></div>)
+            feed.map((url,i) => <div key={i} className='flexchild'><img key={i} src={url.link_url} alt=''></img></div>)
                         }
           </div>
   

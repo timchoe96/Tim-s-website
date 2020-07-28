@@ -250,6 +250,52 @@ nav .rightNav .battery img {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 800px) {
+  .home .finderOpen {
+    width: 35rem;
+    margin-left: -17.5rem;
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home .finderOpen {
+    width: 25rem;
+    margin-left: -12.5rem;
+    margin-top: 12rem;
+  }
+  .home .finderOpen .soonAlert {
+    width: 15rem;
+    margin-left: -7.5rem;
+  }
+  .home .finderOpen .soonAlert .bottomAlert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .finderOpen .soonAlert .bottomAlert .top .error {
+    display: none;
+  }
+  .home .finderOpen .soonAlert .bottomAlert button {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .home .finderOpen {
+    width: 20rem;
+    margin-left: -10rem;
+    margin-top: 12rem;
+  }
+}
+
 .home .homeFolder {
   position: absolute;
   display: -webkit-box;
@@ -329,6 +375,32 @@ nav .rightNav .battery img {
   text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .rightFinderhome {
+    width: 100%;
+  }
+  .rightFinderhome .rightTop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rightFinderhome img {
+    margin: 40px 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .rightFinderhome {
+    width: 100%;
+  }
+  .rightFinderhome .rightTop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rightFinderhome img {
+    margin: 40px 40px 10px;
+  }
+}
+
 .rightFinderdocs {
   border-radius: 0 0 5px 0;
   width: 75%;
@@ -342,10 +414,18 @@ nav .rightNav .battery img {
 .rightFinderdocs .blogDoc {
   display: inline-block;
   margin-left: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
   color: black;
   font-size: 0.8rem;
+}
+
+.rightFinderdocs .blogDoc div {
+  width: 5rem;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .rightFinderdocs .blogDoc img {
@@ -353,6 +433,30 @@ nav .rightNav .battery img {
   -webkit-filter: drop-shadow(3px 3px 3px #e8e8e8);
           filter: drop-shadow(3px 3px 3px #e8e8e8);
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .rightFinderdocs {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rightFinderdocs {
+    width: 100%;
+  }
+  .rightFinderdocs .blogDoc {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .rightFinderdocs {
+    width: 100%;
+  }
+  .rightFinderdocs .blogDoc {
+    margin-left: 53px;
+  }
 }
 
 a {
@@ -420,6 +524,18 @@ a {
           align-items: center;
   font-size: 0.8rem;
   padding: 5px 0 5px 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .leftFinder {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .leftFinder {
+    display: none;
+  }
 }
 
 .control {
@@ -606,6 +722,30 @@ a {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 800px) {
+  .documents .finderOpen {
+    width: 35rem;
+    margin-left: -17.5rem;
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .documents .finderOpen {
+    width: 25rem;
+    margin-left: -12.5rem;
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .documents .finderOpen {
+    width: 20rem;
+    margin-left: -10rem;
+    margin-top: 12rem;
+  }
+}
+
 .blog .content {
   height: 92vh;
   background-color: white;
@@ -709,11 +849,27 @@ a {
           align-items: baseline;
 }
 
+.pictures .posts .flexchild {
+  margin-bottom: 2rem;
+}
+
 .pictures .posts .flexchild img {
   max-height: 400px;
   max-width: 300px;
   height: auto;
   width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .pictures .posts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.about {
+  text-align: center;
 }
 
 .about .words {
@@ -725,6 +881,7 @@ a {
   overflow: scroll;
   max-width: 100vw;
   height: 92vh;
+  max-height: 92vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -732,5 +889,12 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .about .words {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

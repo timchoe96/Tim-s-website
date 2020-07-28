@@ -60,3 +60,34 @@ $border-color:#b0b0b0;
         }
     }
 }   
+
+@media only screen and (max-width:800px){
+    .documents{
+        .finderOpen{
+            width:35rem;
+            margin-left:-17.5rem;
+            margin-top:12rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .documents{
+        .finderOpen{
+            width:25rem;
+            margin-left:-12.5rem;
+            margin-top:12rem;
+        }
+    }
+}
+
+@media only screen and (max-width:420px){
+    .documents{
+        .finderOpen{
+            width:20rem;
+            margin-left:-10rem;
+            margin-top:12rem;
+        }
+    }
+}

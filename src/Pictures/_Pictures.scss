@@ -9,14 +9,22 @@
         background-color:white;
         justify-content: space-evenly;
        align-items: baseline;
-
         .flexchild{
+            margin-bottom:2rem;
             img{
             max-height:400px;
             max-width:300px;;
             height:auto;
             width:auto;
             }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .pictures{
+        .posts{
+            justify-content: center;
         }
     }
 }

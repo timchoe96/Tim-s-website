@@ -1,6 +1,6 @@
 import React from 'react';
-import home from './images/home.png';
 import {Link} from 'react-router-dom';
+import doc from './images/doc.png';
 
 const Homefolder = () => {
     return(
@@ -8,7 +8,7 @@ const Homefolder = () => {
                  {/* home folder  */}
             <Link to='/Home'>
                 <div className='homeFolder'>
-                    <img alt='' src={home}></img>
+                    <img alt='' src={doc}></img>
                     <div>Home</div>
                 </div>
             </Link>

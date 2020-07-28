@@ -1,11 +1,11 @@
 import React from 'react';
-import home from './images/home.png';
 import Rightfinderhome from '../Rightfinderhome/Rightfinderhome';
 import Control from '../Control/Control';
 import Leftfinder from '../Leftfinder/Leftfinder';
 import alert from './images/alert.png';
 import {useDispatch,useSelector} from 'react-redux';
 import {displayAlert} from '../actions/index.js';
+import doc from './images/doc.png';
 
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
                 <div className='topFinder'>
                     <Control/>
                     <div className='icon'>
-                        <img alt='' src={home}></img>
+                        <img alt='' src={doc}></img>
                         <div>Home</div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Home = () => {
                  {/* end alert box */}
             </div>
             <div className='homeFolder'>
-                <img alt='' src={home}></img>
+                <img alt='' src={doc}></img>
                 <div>Home</div>
             </div>
         </div>

@@ -8,7 +8,7 @@ import Homefolder from './Homefolder/Homefolder';
 import Pictures from './Pictures/Pictures';
 import About from './About/About';
 // import playboi from './playboi.mp3';
-// import nature from './natureSounds.mp3';
+import nature from './natureSounds.mp3';
 import Blog from './Blog/Blog';
 const App = () => {
 
@@ -28,10 +28,10 @@ const App = () => {
 
 return (
     <Router>
-        {/* <audio controls='' autoplay='true'>
+        <audio controls='' autoPlay={true} volume={0.0} loop>
         <source src={nature} type="audio/mpeg">
         </source>
-        </audio> */}
+        </audio>
         <div className='App'> 
             <Nav></Nav>
             <Switch>
