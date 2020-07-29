@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
+import {HashRouter as Router, Switch,Route} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import Nav from './Nav/Nav';
 import Home from './Home/Home';
@@ -7,7 +7,6 @@ import Documents from './Documents/Documents';
 import Homefolder from './Homefolder/Homefolder';
 import Pictures from './Pictures/Pictures';
 import About from './About/About';
-// import playboi from './playboi.mp3';
 import nature from './natureSounds.mp3';
 import Blog from './Blog/Blog';
 const App = () => {
@@ -29,8 +28,7 @@ const App = () => {
 return (
     <Router>
         <audio controls='' autoPlay={true} loop>
-        <source src={nature} type="audio/mpeg">
-        </source>
+            <source src={nature} type="audio/mpeg"/>
         </audio>
         <div className='App'> 
             <Nav></Nav>

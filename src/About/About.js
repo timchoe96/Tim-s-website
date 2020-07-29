@@ -6,7 +6,7 @@ const About = () => {
         <div className='about'>
             <Buttons title={'About.doc'} link='Home'/>
             <div className='words'>
-                Welcome to my computer. I keep my ideas and thoughts on here. Don't snoop around too much. 
+                You can tell alot about a person by the contents of their computer.
             </div>
         </div>
     )
