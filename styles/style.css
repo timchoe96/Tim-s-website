@@ -392,6 +392,11 @@ nav .rightNav .battery img {
   text-align: center;
 }
 
+.rightFinderhome .rightTop .pictures img {
+  width: 4.5rem;
+  margin-bottom: 20px;
+}
+
 .rightFinderhome .rightTop .soon {
   text-align: center;
 }
@@ -400,16 +405,12 @@ nav .rightNav .battery img {
   .rightFinderhome {
     width: 100%;
   }
-  .rightFinderhome .rightTop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .rightFinderhome img {
     margin: 40px 40px 10px;
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
   .rightFinderhome {
     width: 100%;
   }
