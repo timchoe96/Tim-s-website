@@ -10,6 +10,7 @@ body{
     background-size: cover;
 }
 
+@import '../../src/Login/Login';
 @import '../../src/Nav/Nav';
 @import '../../src/Home/Home';
 @import '../../src/Homefolder/Homefolder';
@@ -22,5 +23,5 @@ body{
 @import '../../src/Buttons/Buttons';
 @import '../../src/Pictures/Pictures';
 @import '../../src/About/About';
-@import '../../src/Login/Login';
+
 

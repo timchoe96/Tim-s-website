@@ -11,6 +11,63 @@ body {
   background-size: cover;
 }
 
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.login .bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.login .user {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.login .user .img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 nav {
   min-height: 3vh;
   height: 22.97px;
@@ -961,62 +1018,5 @@ a {
   .about .words {
     font-size: 0.8rem;
   }
-}
-
-.login {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.login .bg {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.login .user {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-  top: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-.login .user .img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
